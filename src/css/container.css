@@ -6,7 +6,7 @@
 /* Styles for Mobile devices */
 @media screen and (min-width: 375px) {
   .container {
-    width: unset;
+    width: 100%;
     max-width: 375px;
     padding: 0 20px;
   }

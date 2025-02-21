@@ -17,24 +17,6 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 375px) {
-  .head {
-    width: 375px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .head {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .head {
-      width: 1280px;
-    }
-}
-
 .header-links-icons {
   fill:#fbfbfb;
 }
