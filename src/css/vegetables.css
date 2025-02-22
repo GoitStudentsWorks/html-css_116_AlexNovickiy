@@ -1,1 +1,40 @@
-
+.vegetables {
+}
+.container {
+}
+.vegetables-title-main {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.vegetables-paragraf-main {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fbfbfb;
+}
+.vegetables-container-list {
+}
+.vegetables-item {
+}
+.vegetables-picture-description {
+}
+.vegetables-nickname {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7a3145;
+}
+.vegetables-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #141414;
+}
+.vegetables-picture {
+}
