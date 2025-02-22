@@ -1,0 +1,81 @@
+.your-order img {
+  border-radius: 15px;
+}
+.your-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgba(87, 111, 53, 1);
+  padding-bottom: 80px;
+}
+
+.harvest,
+.title-your-order {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08333;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: rgba(251, 251, 251, 1);
+  padding-top: 80px;
+}
+
+.text-your-order-card,
+.harvest {
+  color: rgba(212, 191, 196, 1);
+}
+
+.text-your-order {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgba(251, 251, 251, 1);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.soc-ntw-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 335px;
+  height: 456px;
+  background-color: rgba(122, 49, 69, 1);
+}
+
+.card-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 295px;
+}
+
+.text-your-order-card {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.soc-ntw-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 295px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+}
