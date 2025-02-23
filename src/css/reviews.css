@@ -31,6 +31,7 @@
     padding: 20px;
     border: 1px solid #d4bfc4;
     border-radius: 24px;
+    max-width: 335px;
 }
 .review-card-two {
     display: none;
@@ -40,6 +41,7 @@
     padding: 20px;
     border: 1px solid #d4bfc4;
     border-radius: 24px;
+    max-width: 335px;
 }
 .review-card-tree {
     display: none;
@@ -49,53 +51,63 @@
     padding: 20px;
     border: 1px solid #d4bfc4;
     border-radius: 24px;
+    max-width: 335px;
 }
 .reviews-images{
     padding-bottom: 24px;
 }
 .reviews-subtitle{
-        padding-bottom: 8px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        text-transform: uppercase;
-        text-align: center;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
         
 }
 .reviews-text-div {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.42857;
-        text-align: center;
-        color: #858585;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-align: center;
+    color: #858585;
 }
 
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px){
     .reviews {
-            padding-top: 100px;
-            padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         }
     .reviews-title {
-    max-width: 553px;
-    padding-bottom: 24px;
+       max-width: 553px;
+       padding-bottom: 24px;
    }
    .reviews-text {
        max-width: 553px;
        padding-bottom: 52px;
    }
+   .review-card-one{
+        margin-right: 24px;
+        max-width: 340px;
+        }
    .review-card-two {
         display: flex;
+        max-width: 340px;
     }
     .review-card-tree{
-            display: none;
+        display: none;
         }
  .reviews-list {
-     display: flex;
-     justify-content: space-between;
-     gap: 24px;}
-
+        display: flex;
+        justify-content: space-between;
+     /* gap: 24px; */
+   
+    }
+/* .reviews-item{
+width: calc((100% - 24px) / 2);
+} */
 
 
     /* .reviews-item {
@@ -136,8 +148,17 @@
         display: flex;
         column-gap: 24px;
 }
+    .review-card-one {
+        margin-right: 0;
+        max-width: 344px;
+ }
+     .review-card-two {
+        max-width: 344px;
+         }
     .review-card-tree {
-        display: flex;}
+        display: flex;
+        max-width: 344px;
+    }
     .reviews-item {
         width: calc((100% - 48px) / 3);
     }
