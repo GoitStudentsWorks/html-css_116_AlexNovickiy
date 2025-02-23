@@ -83,7 +83,7 @@
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(/img/hero-images/hero-mob-img@2x.webp);
+      url(/img/hero-images/hero-tablet-img@2x.webp);
   }
 }
 @media screen and (min-width: 1280px) {
