@@ -17,6 +17,9 @@
 .color-titel {
     color: #576f35;;
 }
+.br{
+    display: none;
+}
 .reviews-text {
     font-weight: 500;
     font-size: 14px;
@@ -83,6 +86,9 @@
     .reviews-title {
        max-width: 553px;
        padding-bottom: 24px;
+   }
+   .br {
+       display: block;
    }
    .reviews-text {
        max-width: 553px;
