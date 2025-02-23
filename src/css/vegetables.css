@@ -1,7 +1,5 @@
-.vegetables {
-}
-.container {
-}
+/*vegetables*/
+
 .container-vegetables {
   background: #7a3145;
   padding-top: 80px;
@@ -21,7 +19,7 @@
   color: #fbfbfb;
   padding-bottom: 20px;
 }
-.logo-part {
+.vegetables-logo-part {
   color: #d4bfc4;
 }
 .vegetables-paragraf-main {
@@ -29,7 +27,6 @@
   font-size: 14px;
   line-height: 1.4;
   color: #fbfbfb;
-  padding-bottom: 40px;
 }
 .vegetables-container-list {
   display: flex;
