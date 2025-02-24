@@ -1,0 +1,56 @@
+.advertisement-section {
+  padding: 80px 0;
+}
+
+.advertisement-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.advertisement-span {
+  border-radius: 12px;
+  background-color: #576f35;
+  color: #fbfbfb;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-section {
+    padding: 120px 0;
+  }
+
+  .advertisement-span {
+    width: 675px;
+  }
+
+  .advertisement-title {
+    font-size: 64px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement-section {
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  .advertisement-title {
+    font-size: 76px;
+    width: 1054px;
+  }
+
+  .responsive-br {
+    display: block;
+  }
+
+  .advertisement-span {
+    width: 808px;
+    display: inline-block;
+    margin-left: -16px;
+  }
+}
