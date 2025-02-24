@@ -1,5 +1,4 @@
 
-
 .header {
   background-color: transparent;
   position: relative;
@@ -35,6 +34,35 @@
 .header-menu-icon {
   stroke-width: 3px;
   stroke:#fbfbfb;
+}
+
+.item-list-menu-nav {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.link-menu-anchor-shop {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+
+.item-list-menu-nav:hover {
+  background-color: #fbfbfb;
+  border: none;
+  color: #7a3145;
+}
+
+.link-menu-anchor-shop:hover {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.header-shop-button:hover {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.shop-basket {
+  stroke: #7a3145;
 }
 
 @media screen and (min-width: 768px) {
@@ -103,7 +131,8 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     overflow: hidden;
-    transition: min-width 0.4s ease-in-out, gap 0.4s ease-in-out;
+    transition: min-width 0.4s ease-in-out,
+      gap 0.4s ease-in-out, background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
 
   .shop-basket {
@@ -127,6 +156,22 @@
     visibility: visible;
     opacity: 1;
     animation: sale 1s both;
+  }
+
+  .header-nav-item {
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  }
+
+  .header-nav-item:hover {
+    background-color: #d4bfc4;
+    border: none;
+    color: #7a3145;
+  }
+
+  .header-nav-item:active {
+    background-color: #fbfbfb;
+    border: none;
+    color: #7a3145;
   }
 
 }
@@ -213,11 +258,9 @@
 .item-list-menu-nav:nth-child(1) {
   padding-left: 16px;
   padding-right: 16px;
-  background-color: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  color: #7a3145;
 }
 
 .link-menu-anchor-shop {
