@@ -1,0 +1,94 @@
+.image {
+    background-color: #7a3145;
+    padding: 40px 20px;
+}
+.img-how-it-works-mob{
+    border-radius: 30px;
+}
+/* ? як закруглити зображення */
+.instructions {
+    background-color: #576f35;
+    padding: 80px 20px;
+}
+.title-how-it-works{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.color-text {
+    color: #d4bfc4;
+}
+.text-how-it-works{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+    padding-bottom: 40px;
+}
+.item-how-it-works{
+    background-color: #fff;
+    color: #858585;
+}
+.color-text-li {
+   color: #141414;
+}
+.list-how-it-works {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item-how-it-works {
+    width: 335px;
+    height: 84px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Styles for Tablet devices */
+@media screen and (min-width: 768px) {
+    .image {
+        width: 768px;
+        padding: 100px 64px;
+    }
+    .instructions {
+        width: 768px;
+        padding: 100px 164px;
+    }
+    .title-how-it-works {
+        font-size: 32px;
+        padding-bottom: 24px;
+    }
+    .text-how-it-works {
+        font-size: 16px;
+        line-height: 1.25;
+        padding-bottom: 52px;
+    }
+    .list-how-it-works {
+        gap: 24px;
+    }
+        .item-how-it-works {
+            width: 440px;
+            height: 76px;
+        }
+}
+
+/* Styles for Desktop devices */
+@media screen and (min-width: 1280px) {
+    
+    .wrap-how-it-works {
+        display: flex;
+    }
+    .image {
+        padding: 100px;
+        width: 640px;
+    }
+    .instructions {
+        width: 640px;
+        padding: 100px;
+    }
+  .text-how-it-works {
+    padding-bottom: 104px;
+  }
+}
