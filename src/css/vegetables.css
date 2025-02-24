@@ -8,8 +8,6 @@
   display: none;
 }
 
-.container-vegetables {
-}
 .vegetables-text {
   margin-bottom: 40px;
 }
@@ -44,8 +42,7 @@
   padding: 32px 24px;
   width: 335px;
 }
-.vegetables-picture-description {
-}
+
 .vegetables-nickname {
   font-weight: 600;
   font-size: 28px;
