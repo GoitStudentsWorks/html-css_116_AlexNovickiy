@@ -15,13 +15,16 @@
   border-radius: 12px;
   background-color: #576f35;
   color: #fbfbfb;
-  width: 100%;
   display: block;
 }
 
 @media screen and (min-width: 768px) {
   .advertisement-section {
-    padding: 100px 0;
+    padding: 120px 0;
+  }
+
+  .advertisement-span {
+    width: 675px;
   }
 
   .advertisement-title {
@@ -33,6 +36,7 @@
 @media screen and (min-width: 1280px) {
   .advertisement-section {
     margin: 0 auto;
+    padding: 100px 0;
   }
 
   .advertisement-title {
