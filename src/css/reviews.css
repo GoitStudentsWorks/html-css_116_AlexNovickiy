@@ -1,0 +1,133 @@
+
+.reviews {
+    color: #141414;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.reviews-title {   
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+.color-titel {
+    color: #576f35;;
+}
+.reviews-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5; 
+    padding-bottom: 40px;
+}
+.review-card-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    max-width: 335px;
+}
+.review-card-two {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    max-width: 335px;
+}
+.review-card-tree {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    max-width: 335px;
+}
+.reviews-images{
+    padding-bottom: 24px;
+}
+.reviews-subtitle {
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;   
+}
+.reviews-text-div {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-align: center;
+    color: #858585;
+}
+
+/* Styles for Tablet devices */
+@media screen and (min-width: 768px){
+    .reviews {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        }
+    .reviews-title {
+       font-size: 64px;
+       line-height: 1;
+       max-width: 553px;
+       padding-bottom: 24px;
+   }
+   .reviews-text {
+       font-size: 16px;
+       line-height: 1.25;
+       max-width: 553px;
+       padding-bottom: 52px;
+   }
+   .review-card-one{
+        margin-right: 24px;
+        max-width: 340px;
+        }
+   .review-card-two {
+        display: flex;
+        max-width: 340px;
+    }
+    .review-card-tree{
+        display: none;
+        }
+    .reviews-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+ }
+
+
+/* Styles for Desktop devices */
+@media screen and (min-width: 1280px){
+
+    .reviews-list {
+        display: flex;
+        column-gap: 24px;
+    }
+    .review-card-one {
+        margin-right: 0;
+        max-width: 344px;
+    }
+     .review-card-two {
+        max-width: 344px;
+         }
+    .review-card-tree {
+        display: flex;
+        max-width: 344px;
+    }
+    .reviews-item {
+        width: calc((100% - 48px) / 3);
+    }
+ 
+}
