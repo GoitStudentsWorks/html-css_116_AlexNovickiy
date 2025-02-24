@@ -1,0 +1,196 @@
+
+.footer{
+  background-color: #7A3145;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-icon{
+  fill: #FBFBFB;
+}
+
+.footer-logo-text{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1.43;
+  padding-top: 14px;
+  color: #FBFBFB;
+  margin-bottom: 40px;
+}
+
+.footer-nav-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px; 
+}
+
+.footer-nav{
+
+  margin-bottom: 40px;
+} 
+
+.nav-link{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FBFBFB;
+  
+}
+
+.contacts{
+   font-style: normal;
+}
+
+.contacts-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.footer-contacts-link link{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+  width: 179px;
+}
+
+.footer-policy{
+  margin-top: 80px;
+
+}
+
+.footer-policy-list{
+  display: flex;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.footer-policy .policy-text,
+.footer-policy .site{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #D4BFC4;
+}
+
+
+/*--- 768 px ---*/
+
+@media screen and (min-width: 768px) {
+ 
+.footer {
+    width: 100%;  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+  }
+
+.footer-icon{
+    width: 216px;
+    height: 20px;
+  }
+
+.footer-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+ 
+.footer-logo-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 265px;
+    height: 60px;
+    padding-top: 24px;
+    margin-bottom: 0;
+}
+
+.footer-nav-list{
+  gap: 24px; 
+  margin-bottom: 0;
+}
+
+
+.contacts-list{
+  gap: 24px;
+}
+
+.footer-policy{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-policy-list{
+ padding-bottom: 0;
+}
+
+.footer-policy .policy-text,
+.footer-policy .site {
+  font-size: 16px;
+  line-height: 1.25;
+   }
+
+}
+
+
+/*--- 1280 px ---*/
+
+@media screen and (min-width: 1280px) {
+
+.footer{
+    width: 100%;
+    padding: 52px 0;
+}
+
+.footer-nav-wrapper{
+  display: flex;
+}
+
+.footer-nav-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+ }
+
+.footer-nav-list{
+  margin-bottom: 0;
+}
+
+.footer-nav{
+  margin-right: 121px;
+}
+
+.footer-logo-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  
+}
+
+.footer-contacts-link link{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
