@@ -2,11 +2,6 @@
   padding: 80px 0;
 }
 
-.advertisement-container {
-  width: 335px;
-  margin: 0 auto;
-}
-
 .advertisement-title {
   font-weight: 600;
   font-size: 48px;
@@ -20,15 +15,13 @@
   border-radius: 12px;
   background-color: #576f35;
   color: #fbfbfb;
+  width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
   .advertisement-section {
     padding: 100px 0;
-  }
-
-  .advertisement-container {
-    width: 704px;
   }
 
   .advertisement-title {
@@ -42,15 +35,18 @@
     margin: 0 auto;
   }
 
-  .advertisement-container {
-    width: 1080px;
-  }
-
   .advertisement-title {
     font-size: 76px;
+    width: 1054px;
   }
 
   .responsive-br {
     display: block;
+  }
+
+  .advertisement-span {
+    width: 808px;
+    display: inline-block;
+    margin-left: -16px;
   }
 }
