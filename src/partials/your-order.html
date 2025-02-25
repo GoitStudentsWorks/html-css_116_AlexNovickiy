@@ -1,59 +1,145 @@
 <section-your-order class="your-order">
-    <div class="container container-your-order">
-        <div class="container-title-p">
-            <h2 class="title-your-order">Fresh <span class="harvest"> Harvest</span> Box has got you covered</h2>
-            <p class="text-your-order"> Our boxes are packed with delicious, nutritious vegetables, perfect for
-                anyone
-                looking to eat healthier or support local farmers. Order your box today and start enjoying the best
-                that
-                nature has to offer!</p>
-        </div>
-        <div class="container-form-card">
-            <form class="form-your-order">
-                <label for="email" class="label-your-order">Enter your email to get started</label>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" class="input-your-order" placeholder="Email address"
-                        required>
-                    <button type="submit" class="btn-your-order">Get started</button>
-                </div>
-            </form>
-
-
-            <div class="soc-ntw-card">
-                <picture class="card-img">
-                    <source srcset="
-            ./img/your-order-images/your-order-mob-img.webp    1x,
-            ./img/your-order-images/your-order-mob-img@2x.webp 2x
-        " media="(max-width:767px)" sizes="295px" />
-
-                    <source srcset="
-            ./img/your-order-images/your-order-tab-img.webp    1x,
-            ./img/your-order-images/your-order-tab-img@2x.webp 2x
-        " media="(min-width:768px) and (max-width:1279px)" sizes="536px" />
-
-                    <source srcset="
-            ./img/your-order-images/your-order-desk-img.webp 1x,
-            ./img/your-order-images/your-order-desk-img@2x.webp 2x
-        " media="(min-width:1280px)" size="428" height="352" />
-
-                    <img src="./img/your-order-images/your-order-mob-img.webp"
-                        alt="Woman squeezing lemon into a blender with fruits." sizes="295" height="272" />
-                </picture>
-                <div class="card-content">
-                    <p class="text-your-order-card">
-                        Follow us on our social networks:
-                    </p>
-                    <ul class="social-links">
-                        <li class="social-link"><a href="https://www.instagram.com/goitclub/" target="_blank"
-                                rel="noopener noreferrer">Instagram</a></li>
-                        <li class="social-link"><a href="https://www.facebook.com/goITclub/" target="_blank"
-                                rel="noopener noreferrer">Facebook</a></li>
-                        <li class="social-link"><a href="https://www.youtube.com/c/GoIT" target="_blank"
-                                rel="noopener noreferrer">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <div class="container container-your-order">
+    <div class="container-title-p">
+      <h2 class="title-your-order">
+        Fresh <span class="harvest"> Harvest</span> Box has got you covered
+      </h2>
+      <p class="text-your-order">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
     </div>
+    <div class="container-form-card">
+      <!-- <form class="form-your-order">
+        <label for="email" class="label-your-order"
+          >Enter your email to get started</label
+        >
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-your-order"
+            placeholder="Email address"
+            required
+          />
+          <button type="submit" class="btn-your-order">Get started</button>
+        </div>
+      </form> -->
+
+      <div class="form-container">
+        <p class="form-text">
+          Ordering <span class="form-text-decoration">from us</span> is quick
+          and easy! Fill out<span class="form-text-decoration-green"></span>
+            the form</span
+          >
+          below and we will contact you !
+        </p>
+        <form class="form-your-order">
+          <div class="input-group">
+            <label for="credentials" class="label-your-order"></label>
+            <input
+              type="text"
+              id="credentials"
+              name="credentials"
+              class="input-your-order"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="email" class="label-your-order"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input-your-order required-input-your-order"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="user-comment" class="form-label"></label>
+            <textarea
+              placeholder="Comment"
+              name="user-comment"
+              class="input-your-order textarea-input-your-order"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-your-order">Send</button>
+        </form>
+      </div>
+
+      <div class="soc-ntw-card">
+        <picture class="card-img">
+          <source
+            srcset="
+              ./img/your-order-images/your-order-mob-img.webp    1x,
+              ./img/your-order-images/your-order-mob-img@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            sizes="295px"
+          />
+
+          <source
+            srcset="
+              ./img/your-order-images/your-order-tab-img.webp    1x,
+              ./img/your-order-images/your-order-tab-img@2x.webp 2x
+            "
+            media="(min-width:768px) and (max-width:1279px)"
+            sizes="536px"
+          />
+
+          <source
+            srcset="
+              ./img/your-order-images/your-order-desk-img.webp    1x,
+              ./img/your-order-images/your-order-desk-img@2x.webp 2x
+            "
+            media="(min-width:1280px)"
+            size="428"
+            height="352"
+          />
+
+          <img
+            src="./img/your-order-images/your-order-mob-img.webp"
+            alt="Woman squeezing lemon into a blender with fruits."
+            sizes="295"
+            height="272"
+          />
+        </picture>
+        <div class="card-content">
+          <p class="text-your-order-card">Follow us on our social networks:</p>
+          <ul class="social-links">
+            <li class="social-link">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-link">
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-link">
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section-your-order>

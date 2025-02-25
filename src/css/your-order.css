@@ -119,32 +119,152 @@
   }
 }
 
-/* Форма заказа */
-.form-your-order {
+/* ---------------- from-part-START ---------------- */
+
+.form-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  padding: 40px 20px 40px 20px;
   border-radius: 30px;
   width: 335px;
   height: 552px;
-  border: solid 1px rgba(251, 251, 251, 1);
+  background: #fbfbfb;
 }
 
+.form-your-order {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-your-order>:nth-last-child(2) {
+  margin-bottom: 4px;
+}
+
+.form-text {
+  color: #141414;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+.form-text-decoration {
+  color: #7a3145;
+}
+
+.form-text-decoration-green {
+  color: #576f35;
+}
+
+
+.input-your-order {
+  width: 100%;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 14px 0 14px 16px;
+  width: 100%;
+  height: 48px;
+  resize: none;   
+}
+
+.input-your-order::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #141414;
+}
+
+.required-input-your-order{
+  transition: border-color 250ms ease-in-out;
+}
+
+.required-input-your-order:valid {
+  border-color: #3cbc81;   
+}
+
+.required-input-your-order:not(:placeholder-shown):invalid {
+  border-color: #7a3145;
+}
+
+.textarea-input-your-order {
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 14px 0 0 16px;
+  height: 92px;
+}
+
+
+
+.btn-your-order {
+  border-radius: 30px;
+  padding: 16px 129px;
+  width: 100%;
+  height: 52px;
+  background: #7a3145;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.btn-your-order:focus {
+  background: #fbfbfb;
+  color: #7a3145;
+}
+
+/* ---------------- from-part-END ---------------- */
+
 @media screen and (min-width: 768px) {
-  .form-your-order {
+  .form-container {
     width: 640px;
     height: 632px;
+    padding: 72px 100px;
+  }
+
+  .form-text {
+    font-size: 32px;
+    margin-bottom: 52px;
+  }
+
+  .input-your-order {
+    height: 52px;
+  }
+
+  .input-your-order::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .textarea-input-your-order {
+    height: 96px;
+  }
+
+  .form-your-order>:nth-last-child(2) {
+    margin-bottom: 8px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .form-your-order {
+  .form-container {
     width: 524px;
     height: 592px;
   }
+
+  .form-container {
+    padding: 52px 28px;
+  }
+
+
 }
 
 /* =================== БЛОК SOCIAL NETWORKS =================== */
