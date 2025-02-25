@@ -10,8 +10,8 @@
 }
 .hero-container-left {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -63,33 +63,62 @@
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (min-width: 375px) {
   .hero-title {
     font-size: 52px;
     max-width: 335px;
   }
+
   .hero-text {
-    max-width: 335px;
+    max-width: 330px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+}
+
+@media screen and (max-width: 374px) {
+  .hero-title {
+      font-size: 52px;
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 0 auto;
+    }
+  
+    .hero-text {
+      max-width: 330px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
   .hero-container-left {
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 52px;
+    width: 704px;
+    margin-top: 120px;
+    margin-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-title {
     margin-top: 0px;
     font-size: 76px;
     max-width: 704px;
     margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .hero-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    max-width: 704px;
+    max-width: 603px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .hero-image {
     width: 100%;
@@ -117,17 +146,17 @@
     display: flex;
   }
   .hero-container-left {
-    padding-top: 232px;
-    padding-bottom: 52px;
-    padding-left: 100px;
-    padding-right: 36px;
+    margin-top: 232px;
+    margin-bottom: 52px;
+    margin-left: 100px;
+    margin-right: 38px;
+    width: 504px;
   }
   .hero-title {
     font-weight: 600;
     font-size: 76px;
     line-height: 1;
     letter-spacing: -0.01em;
-    width: 502px;
     margin-top: 0px;
     margin-bottom: 128px;
   }
@@ -135,11 +164,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    width: 475px;
+    width: 470px;
   }
 
   .hero-image {
-    width: 100%;
+    width: 640px;
     height: 796px;
     background-position: right;
     background-image: linear-gradient(
