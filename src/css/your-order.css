@@ -1,9 +1,23 @@
+/* =================== ОСНОВНАЯ СЕКЦИЯ =================== */
+.your-order {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+/* (исправлено) Теперь отступы управляются на уровне секции, а не контейнера */
+
 /* =================== ОСНОВНОЙ КОНТЕЙНЕР =================== */
+
 .container-your-order {
   padding: 5px 15px;
   width: 100%;
   margin: 0 auto;
-  align-items: center;
 }
 
 /* -------------------- Медиа-запросы для контейнера -------------------- */
@@ -11,14 +25,10 @@
 @media screen and (min-width: 375px) {
   .container-your-order {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin: 0 auto;
   }
 }
+/* (исправлено)*/
 
 @media screen and (min-width: 768px) {
   .container-your-order {
@@ -28,7 +38,6 @@
 
 @media screen and (min-width: 1280px) {
   .container-your-order {
-    padding: 100px;
     align-items: flex-start;
   }
 }
@@ -128,11 +137,10 @@
   gap: 20px;
   padding: 20px;
   border-radius: 30px;
-  width: 335px;
   height: 552px;
   border: solid 1px rgba(251, 251, 251, 1);
 }
-
+/* исправлено */
 @media screen and (min-width: 768px) {
   .form-your-order {
     width: 640px;
