@@ -12,6 +12,6 @@
 
   function toggleModal() {
 
-    refs.modal.classList.toggle("is-open");
+    refs.modal.classList.toggle("is-modal-open");
   }
 })();
