@@ -1,0 +1,251 @@
+/* =================== ОСНОВНАЯ СЕКЦИЯ =================== */
+.your-order {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* -------------------- Медиа-запросы для СЕКЦИИ -------------------- */
+
+@media screen and (min-width: 768px) {
+  .your-order {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* =================== ОСНОВНОЙ КОНТЕЙНЕР =================== */
+
+/* -------------------- Медиа-запросы для контейнера -------------------- */
+
+@media screen and (min-width: 375px) {
+  .container-your-order {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-your-order {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-your-order {
+    align-items: flex-start;
+  }
+}
+
+/* =================== ТИТУЛ + ТЕКСТ =================== */
+.container-title-p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-title-p {
+    margin-bottom: 52px;
+  }
+}
+
+/* Картинки, вписанные в блок */
+.your-order img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Заголовки Harvest и title-your-order */
+.harvest,
+.title-your-order {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08333;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: rgba(251, 251, 251, 1);
+}
+
+@media screen and (min-width: 768px) {
+
+  .harvest,
+  .title-your-order {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-your-order {
+    width: 751px;
+  }
+}
+
+/* harvest переопределяется цветом вместе с .text-your-order-card */
+.text-your-order-card,
+.harvest {
+  color: rgba(212, 191, 196, 1);
+}
+
+/* Обычный текст внутри секции */
+.text-your-order {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgba(251, 251, 251, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .text-your-order {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .text-your-order {
+    width: 742px;
+  }
+}
+
+/* =================== КОНТЕЙНЕР ДЛЯ ФОРМЫ И КАРТОЧКИ =================== */
+@media screen and (min-width: 1280px) {
+  .container-form-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+/* Форма заказа */
+.form-your-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  height: 552px;
+  border: solid 1px rgba(251, 251, 251, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .form-your-order {
+    width: 640px;
+    height: 632px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form-your-order {
+    width: 524px;
+    height: 592px;
+  }
+}
+
+/* =================== БЛОК SOCIAL NETWORKS =================== */
+.soc-ntw-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 30px;
+  padding: 40px 20px;
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  background-color: rgba(122, 49, 69, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .soc-ntw-card {
+    width: 640px;
+    padding: 52px;
+    gap: 52px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .soc-ntw-card {
+    width: 524px;
+    height: 592px;
+    padding: 52px 48px;
+    margin: 0;
+    gap: 80px;
+  }
+}
+
+/* Содержимое карточки */
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 295px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-content {
+    max-width: 492px;
+  }
+}
+
+/* Текст в карточке */
+.text-your-order-card {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+@media screen and (min-width: 768px) {
+  .text-your-order-card {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* =================== СОЦИАЛЬНЫЕ ССЫЛКИ =================== */
+.social-links {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 1);
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links li:not(:last-child)::after {
+  content: ' / ';
+  margin-left: 8px;
+}
+
+.social-links a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
