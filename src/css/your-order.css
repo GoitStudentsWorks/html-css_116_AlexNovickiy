@@ -4,21 +4,16 @@
   padding-bottom: 80px;
 }
 
+/* -------------------- Медиа-запросы для СЕКЦИИ -------------------- */
+
 @media screen and (min-width: 768px) {
   .your-order {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-/* (исправлено) Теперь отступы управляются на уровне секции, а не контейнера */
 
 /* =================== ОСНОВНОЙ КОНТЕЙНЕР =================== */
-
-.container-your-order {
-  padding: 5px 15px;
-  width: 100%;
-  margin: 0 auto;
-}
 
 /* -------------------- Медиа-запросы для контейнера -------------------- */
 
@@ -28,7 +23,6 @@
     flex-direction: column;
   }
 }
-/* (исправлено)*/
 
 @media screen and (min-width: 768px) {
   .container-your-order {
@@ -76,6 +70,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .harvest,
   .title-your-order {
     font-size: 64px;
@@ -140,7 +135,7 @@
   height: 552px;
   border: solid 1px rgba(251, 251, 251, 1);
 }
-/* исправлено */
+
 @media screen and (min-width: 768px) {
   .form-your-order {
     width: 640px;
