@@ -134,6 +134,38 @@
   background: #fbfbfb;
 }
 
+.btn-your-order {
+  border-radius: 30px;
+  padding: 16px 129px;
+  width: 100%;
+  height: 52px;
+  background: #7a3145;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  transition: background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.btn-your-order:focus {
+  background: #fbfbfb;
+  color: #7a3145;
+}
+
+@media screen and (max-width: 374px) {
+  .form-container {
+    height: auto;
+  }
+
+  .btn-your-order {
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .form-your-order {
   width: 100%;
   height: 100%;
@@ -156,6 +188,21 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  .form-text {
+    width: 296px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form-text {
+    width: 440px;
+  }
+
+  .input-your-order {
+    padding: 16px 0 16px 16px;
+  }
+}
 
 .form-text-decoration {
   color: #7a3145;
@@ -173,7 +220,8 @@
   padding: 14px 0 14px 16px;
   width: 100%;
   height: 48px;
-  resize: none;   
+  resize: none; 
+  outline: none; 
 }
 
 .input-your-order::placeholder {
@@ -183,16 +231,44 @@
   color: #141414;
 }
 
-.required-input-your-order{
+.input-your-order {
   transition: border-color 250ms ease-in-out;
 }
 
-.required-input-your-order:valid {
-  border-color: #3cbc81;   
+@media screen and (min-width: 768px) {
+  .input-your-order {
+    padding: 16px 0 16px 14px;
+  }
+}
+
+.input-your-order:focus {
+  border-color: #7a3145;
+}
+
+.text-valid,
+.text-invalid {
+  display: none;
+  margin-top: 4px;
+  margin-left: 16px;
 }
 
 .required-input-your-order:not(:placeholder-shown):invalid {
-  border-color: #7a3145;
+  border-color: #E74A3B;
+}
+
+.required-input-your-order:not(:placeholder-shown):invalid+.container-text-valid-invalid .text-invalid {
+  color: #E74A3B;
+  display: block;
+}
+
+
+.required-input-your-order:not(:placeholder-shown):valid {
+  border-color: #3cbc81;   
+}
+
+.required-input-your-order:not(:placeholder-shown):valid + .container-text-valid-invalid .text-valid {
+  color: #3cbc81;
+  display: block;
 }
 
 .textarea-input-your-order {
@@ -200,29 +276,6 @@
   border-radius: 15px;
   padding: 14px 0 0 16px;
   height: 92px;
-}
-
-
-
-.btn-your-order {
-  border-radius: 30px;
-  padding: 16px 129px;
-  width: 100%;
-  height: 52px;
-  background: #7a3145;
-  text-transform: uppercase;
-  color: #fbfbfb;
-  font-weight: 600;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms ease-in-out,
-    color 250ms ease-in-out;
-}
-
-.btn-your-order:focus {
-  background: #fbfbfb;
-  color: #7a3145;
 }
 
 /* ---------------- from-part-END ---------------- */
@@ -264,7 +317,7 @@
   }
 
   .form-container {
-    padding: 52px 28px;
+    padding: 52px 48px;
   }
 
 
