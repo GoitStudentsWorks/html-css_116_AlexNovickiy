@@ -7,14 +7,14 @@
     background-color: #7a3145;
 }
 
-.image {
+.image-container-how-work {
     padding: 40px 0;
     margin: 0 auto;
     width: 335px;
 }
 
 @media screen and (max-width: 374px) {
-    .image {
+    .image-container-how-work {
             width: 100%;
             padding-left: 20px;
             padding-right: 20px;
@@ -67,6 +67,7 @@
 }
 .color-text-li {
    color: #141414;
+    font-weight: 700;
 }
 .list-how-it-works {
     display: flex;
@@ -75,17 +76,19 @@
 }
 .item-how-it-works {
     width: 100%;
-    padding: 12px 0 12px 24px;
     border-radius: 15px;
+    padding: 12px 27px 12px 24px;
     display: flex;
-    gap: 24px;
     align-items: center;
+    gap: 24px;
 }
 
-@media screen and (max-width: 374px) {
-.item-how-it-works {
-        padding-right: 24px;
-    }
+.text-counter-container {
+    width: 220px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #858585;
 }
 
 .counter-conrainer {
@@ -127,17 +130,36 @@
     
 }
 
-/* Дообіть все для десктопу та таблету : */
-
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
-    .image {
+
+    .how-it-works {
+            padding-bottom: 100px;   
+    }
+
+    .instructions {
+        padding-top: 100px;
+        width: 440px;
+        margin: 0 auto;
+    }
+
+    .item-how-it-works {
+        padding: 18px 15px 18px 24px;
+    }
+
+    .text-counter-container {
+        width: 325px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .image-container-how-work {
         width: 768px;
         padding: 100px 64px;
     }
     .instructions {
         width: 768px;
-        padding: 100px 164px;
+        padding-left: 164px;
+        padding-right: 164px;
     }
     .title-how-it-works {
         font-size: 32px;
@@ -159,18 +181,34 @@
 
 /* Styles for Desktop devices */
 @media screen and (min-width: 1280px) {
+    .how-it-works {
+        padding-bottom: 0;
+    }
+
+    .instructions {
+        width: 100%;
+        padding: 100px;
+        margin-left: 0;
+    }
     
     .wrap-how-it-works {
         display: flex;
     }
-    .image {
+    .image-container-how-work {
         padding: 100px;
         width: 640px;
     }
     .instructions {
-        width: 640px;
+        width: 100%;
         padding: 100px;
     }
+
+    .wrapper-desk-container {
+        margin: 0 auto;
+        display: flex;
+        width: 1280px;
+    }
+
   .text-how-it-works {
     padding-bottom: 104px;
   }
