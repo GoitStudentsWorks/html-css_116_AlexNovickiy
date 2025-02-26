@@ -11,10 +11,12 @@
   z-index: 100;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.header-menu-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .header-links-icons {
@@ -84,6 +86,16 @@
 
 
 @media screen and (min-width: 1280px) {
+  .head {
+    max-width: 1080px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+ .header-menu-wrap {
+   margin-right: 210px;
+ }
+
   .header-navigation {
       display: flex;
       justify-content: center;
@@ -102,9 +114,6 @@
   .header-nav-item {
     border: 1px solid #fbfbfb;
     border-radius: 12px;
-    padding: 12px;
-    min-width: 104px;
-    height: 44px;
     margin-right: 20px;
   }
 
@@ -112,11 +121,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    padding: 12px;
   }
 
   .header-shop-button {
+    position: absolute;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -241,23 +251,24 @@
 .item-list-menu-nav {
   border: 1px solid #fbfbfb;
   border-radius: 12px;
-  padding: 12px 24px;
+  text-align: center;
   min-width: 118px;
   height: 44px;
-  text-align: center;
 }
 
 .link-menu-nav-anchor {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  height: 100%;
-  width: 100%;
+  padding: 12px 24px;
+  display: block;
+}
+
+.item-list-menu-nav:nth-child(1) .link-menu-nav-anchor {
+  padding: 12px 18px;
 }
 
 .item-list-menu-nav:nth-child(1) {
-  padding-left: 16px;
-  padding-right: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
@@ -298,16 +309,16 @@
       right: 32px;
     }
 
-    .item-list-menu-nav {
-      padding: 12px 21px;
-    }
-  
     .link-menu-nav-anchor {
       font-size: 16px;
       line-height: 1.25;
     }
+
+    .link-menu-nav-anchor {
+      padding: 12px 21px;
+    }
   
-    .item-list-menu-nav:nth-child(1) {
+    .item-list-menu-nav:nth-child(1) .link-menu-nav-anchor {
       padding: 12px;
     }
   
