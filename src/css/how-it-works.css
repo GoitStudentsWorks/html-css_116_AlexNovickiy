@@ -50,16 +50,16 @@
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .color-text {
     color: #d4bfc4;
 }
 .text-how-it-works{
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
-    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 40px;
 }
 .item-how-it-works{
     background-color: #fff;
@@ -134,14 +134,15 @@
 @media screen and (min-width: 768px) {
 
     .how-it-works {
-            padding-bottom: 100px;   
+        padding-bottom: 100px;   
     }
-
-    .instructions {
-        padding-top: 100px;
-        width: 440px;
-        margin: 0 auto;
-    }
+          .instructions {
+              width: 768px;
+              padding-top: 100px;
+              padding-left: 164px;
+              padding-right: 164px;
+              margin: 0 auto;
+          }
 
     .item-how-it-works {
         padding: 18px 15px 18px 24px;
@@ -156,26 +157,21 @@
         width: 768px;
         padding: 100px 64px;
     }
-    .instructions {
-        width: 768px;
-        padding-left: 164px;
-        padding-right: 164px;
-    }
     .title-how-it-works {
         font-size: 32px;
-        padding-bottom: 24px;
+        margin-bottom: 24px;
     }
     .text-how-it-works {
         font-size: 16px;
         line-height: 1.25;
-        padding-bottom: 52px;
+        margin-bottom: 52px;
     }
     .list-how-it-works {
         gap: 24px;
     }
-        .item-how-it-works {
-            width: 440px;
-            height: 76px;
+    .item-how-it-works {
+        width: 440px;
+        height: 76px;
         }
 }
 
@@ -190,26 +186,20 @@
         padding: 100px;
         margin-left: 0;
     }
-    
-    .wrap-how-it-works {
+
+           .wrap-how-it-works {
         display: flex;
     }
     .image-container-how-work {
         padding: 100px;
         width: 640px;
     }
-    .instructions {
-        width: 100%;
-        padding: 100px;
-    }
-
     .wrapper-desk-container {
         margin: 0 auto;
         display: flex;
         width: 1280px;
     }
-
-  .text-how-it-works {
-    padding-bottom: 104px;
+    .text-how-it-works {
+    margin-bottom: 104px;
   }
 }
