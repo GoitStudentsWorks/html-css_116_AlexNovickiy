@@ -9,14 +9,21 @@
   fill: #FBFBFB;
 }
 
+.footer-logo{
+  margin-bottom: 40px;
+}
+
 .footer-logo-text{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  letter-spacing: 1.43;
-  padding-top: 14px;
+  margin-top: 14px;
   color: #FBFBFB;
-  margin-bottom: 40px;
+}
+
+.footer-logo-text:hover,
+.footer-logo-text:focus{
+  color:#D4BFC4;
 }
 
 .footer-nav-list{
@@ -27,7 +34,6 @@
 }
 
 .footer-nav{
-
   margin-bottom: 40px;
 } 
 
@@ -35,14 +41,19 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.012em;
   text-transform: uppercase;
   color: #FBFBFB;
-  
+}
+
+.footer-nav-link a:hover,
+.footer-nav-link a:focus{
+  color: #D4BFC4;
 }
 
 .contacts{
    font-style: normal;
+   
 }
 
 .contacts-list{
@@ -52,12 +63,16 @@
   gap: 14px;
 }
 
-.footer-contacts-link link{
+.footer-contacts-item{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
-  letter-spacing: -0.01em;
-  width: 179px;
+  letter-spacing: normal;
+}
+
+.footer-contacts-item a:hover,
+.footer-contacts-item a:focus{
+  color: #D4BFC4;
 }
 
 .footer-policy{
@@ -68,7 +83,6 @@
 .footer-policy-list{
   display: flex;
   gap: 8px;
-  padding-bottom: 16px;
 }
 
 .footer-policy .policy-text,
@@ -77,6 +91,10 @@
   font-size: 14px;
   line-height: 1.43;
   color: #D4BFC4;
+}
+
+.site{
+  margin-top: 16px;
 }
 
 
@@ -90,6 +108,9 @@
     padding-bottom: 32px;
     
   }
+.footer-logo {
+  margin-bottom: 0;
+}
 
 .footer-icon{
     width: 216px;
@@ -109,15 +130,21 @@
     line-height: 1.25;
     width: 265px;
     height: 60px;
-    padding-top: 24px;
+    margin-top: 24px;
     margin-bottom: 0;
+}
+
+.footer-nav-contacts{
+  margin-left: 212px;
+}
+.footer-nav{
+  margin-bottom: 64px;
 }
 
 .footer-nav-list{
   gap: 24px; 
   margin-bottom: 0;
 }
-
 
 .contacts-list{
   gap: 24px;
@@ -140,6 +167,9 @@
   line-height: 1.25;
    }
 
+.site {
+   margin-top: 0;
+ }
 }
 
 
@@ -168,6 +198,8 @@
 
 .footer-nav{
   margin-right: 121px;
+  margin-left: 250px;
+  margin-bottom: 0;
 }
 
 .footer-logo-text {
@@ -176,11 +208,18 @@
   line-height: 1.25;
   
 }
+.contacts{
+  padding-right: 32px;
+}
 
-.footer-contacts-link link{
+.footer-contacts-item{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+}
+
+.footer-policy{
+  margin-top: 124px;
 }
 }
 
