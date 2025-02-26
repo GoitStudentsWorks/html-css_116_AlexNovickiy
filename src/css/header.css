@@ -1,5 +1,4 @@
 
-
 .header {
   background-color: transparent;
   position: relative;
@@ -12,9 +11,17 @@
   z-index: 100;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.header-menu-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-logo-links {
+  display: flex;
+  align-items: center;
 }
 
 .header-links-icons {
@@ -34,6 +41,43 @@
 .header-menu-icon {
   stroke-width: 3px;
   stroke:#fbfbfb;
+  transition: stroke 250ms ease-in-out;
+}
+
+.header-menu-icon:is(:hover, :focus) {
+  stroke: #7a3145;
+}
+
+.item-list-menu-nav {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.link-menu-anchor-shop {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+
+.link-menu-nav-anchor {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.link-menu-nav-anchor:is(:hover, :focus) {
+  background-color: #fbfbfb;
+  color: #7a3145;
+  border: none;
+}
+
+.header-shop-button:is(:hover, :focus) {
+  background-color: #D4BFC4;
+  color: #7a3145;
+}
+
+.header-shop-button:active {
+  background-color: #fbfbfb;
+}
+
+.shop-basket {
+  stroke: #7a3145;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,6 +99,16 @@
 
 
 @media screen and (min-width: 1280px) {
+  .head {
+    max-width: 1080px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+ .header-menu-wrap {
+   margin-right: 210px;
+ }
+
   .header-navigation {
       display: flex;
       justify-content: center;
@@ -71,23 +125,24 @@
   }
 
   .header-nav-item {
-    border: 1px solid #fbfbfb;
-    border-radius: 12px;
-    padding: 12px;
-    min-width: 104px;
     height: 44px;
-    margin-right: 20px;
+    border-radius: 12px;
   }
 
   .header-nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: 100%;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+    flex-shrink: 0;
   }
 
   .header-shop-button {
+    position: absolute;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,7 +157,8 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     overflow: hidden;
-    transition: min-width 0.4s ease-in-out, gap 0.4s ease-in-out;
+    transition: min-width 0.4s ease-in-out,
+      gap 0.4s ease-in-out, background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
 
   .shop-basket {
@@ -128,6 +184,20 @@
     animation: sale 1s both;
   }
 
+  .header-nav-link {
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  }
+
+  .header-nav-lin:active {
+    background-color: #d4bfc4;
+    border: none;
+  }
+
+  .header-nav-link:is(:hover, :focus, :active) {
+    color: #7a3145;
+    background-color: #d4bfc4;
+    border: none;
+  }
 }
 
 .mobile-menu {
@@ -136,6 +206,12 @@
   height: 100%;
   right: 0;
   top: 0;
+  padding-top: 296px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 999;
   background-color: #576f35;
   opacity: 0;
@@ -153,16 +229,10 @@
 }
 
 .container-menu {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 296px;
-  padding-bottom: 52px;
   height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .btn-icon-menu {
@@ -175,10 +245,16 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    margin: 0;
 }
 
 .icon-menu-close {
   stroke: #fbfbfb;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-menu-close:is(:hover, :focus) {
+  stroke: #7a3145;
 }
 
 .nav-list-menu {
@@ -193,30 +269,31 @@
 }
 
 .item-list-menu-nav {
-  border: 1px solid #fbfbfb;
-  border-radius: 12px;
-  padding: 12px 24px;
-  min-width: 118px;
-  height: 44px;
   text-align: center;
+  width: 118px;
+  height: 44px;
+  border-radius: 12px;
 }
 
 .link-menu-nav-anchor {
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
+  padding: 12px 24px;
+  display: block;
   height: 100%;
-  width: 100%;
+}
+
+.item-list-menu-nav:nth-child(1) .link-menu-nav-anchor {
+  padding: 12px 18px;
 }
 
 .item-list-menu-nav:nth-child(1) {
-  padding-left: 16px;
-  padding-right: 16px;
-  background-color: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  color: #7a3145;
 }
 
 .link-menu-anchor-shop {
@@ -233,12 +310,22 @@
   letter-spacing: -0.01em;
 }
 
+.link-menu-anchor-shop:is(:hover, :focus) {
+  background-color: #D4BFC4;
+  color: #7a3145;
+}
+
+.link-menu-anchor-shop:active {
+  background-color: #fbfbfb;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
       background-color: rgba(20, 20, 20, 0.4);
     }
   
     .container-menu {
+      position: absolute;
       padding-top: 360px;
       padding-bottom: 48px;
       width: 351px;
@@ -254,17 +341,18 @@
       right: 32px;
     }
 
-    .item-list-menu-nav {
-      padding: 12px 21px;
-    }
-  
     .link-menu-nav-anchor {
       font-size: 16px;
       line-height: 1.25;
     }
+
+    .link-menu-nav-anchor {
+      padding: 12px 21px;
+    }
   
-    .item-list-menu-nav:nth-child(1) {
-      padding: 12px;
+    .item-list-menu-nav:nth-child(1) .link-menu-nav-anchor {
+      padding-left: 11px;
+      padding-right: 11px;
     }
   
     .link-menu-anchor-shop {
