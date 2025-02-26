@@ -18,7 +18,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .vegetables-logo-part {
   color: #d4bfc4;
@@ -89,7 +89,7 @@
       transform: translateY(0);
     }
 @media screen and (min-width: 768px) {
-  .container-vegetables {
+  .vegetables {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -101,7 +101,7 @@
   .vegetables-title-main {
     font-size: 64px;
     line-height: 1;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
   .vegetables-paragraf-main {
     font-size: 16px;
@@ -135,4 +135,12 @@
     padding-bottom: 8px;
   }
 
+}
+@media screen and (max-width: 374px) {
+  .container-vegetables {
+    padding: 0 20px;
+  }
+  .vegetables-title-main {
+    font-size: 42px;
+  }
 }
