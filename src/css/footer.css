@@ -21,11 +21,6 @@
   color: #FBFBFB;
 }
 
-.footer-logo-text:hover,
-.footer-logo-text:focus{
-  color:#D4BFC4;
-}
-
 .footer-nav-list{
   display: flex;
   flex-direction: column;
@@ -184,12 +179,11 @@
 
 .footer-nav-wrapper{
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .footer-nav-contacts {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
  }
 
 .footer-nav-list{
@@ -197,9 +191,8 @@
 }
 
 .footer-nav{
-  margin-right: 121px;
-  margin-left: 250px;
   margin-bottom: 0;
+  margin-right: 122px;
 }
 
 .footer-logo-text {
