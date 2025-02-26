@@ -174,7 +174,6 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -1.5%;
   color: #ffffff;
   cursor: pointer;
   background-color: rgba(122, 49, 69, 1);
@@ -198,7 +197,6 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -1.5%;
   border: 1px solid #858585;
 }
 
