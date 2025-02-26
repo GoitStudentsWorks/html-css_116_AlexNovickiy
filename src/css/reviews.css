@@ -53,10 +53,10 @@
     max-width: 335px;
 }
 .reviews-images{
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 .reviews-subtitle {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.1;
