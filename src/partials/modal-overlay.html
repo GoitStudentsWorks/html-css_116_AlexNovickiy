@@ -1,0 +1,137 @@
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button class="icon-button" type="button" data-modal-close>
+      <svg class="icon-menu-close modal-close" width="32" height="32">
+        <use href="/img/sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+    <p class="modal-p">Healthy eating is the key to success</p>
+    <form class="modal-form" onsubmit="alert('submit!');return false">
+      <div class="input-label-svg">
+        <label for="user-name" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="text"
+            class="modal-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Full name"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-label-svg">
+        <label for="user-phone" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            class="modal-input"
+            name="user-tel"
+            id="user-phone"
+            placeholder="Phone"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-label-svg">
+        <label for="user-email" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            class="modal-input required-input-your-order"
+            name="user-mail"
+            id="user-email"
+            placeholder="Email"
+            pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+            required
+          />
+          <div class="container-text-valid-invalid">
+            <p class="text-invalid">Invalid email, try again</p>
+            <p class="text-valid">Succes!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-input">
+        <label for="user-comment" class="label-input"><span></span> </label>
+        <textarea
+          class="modal-input-comment"
+          name="user-comment"
+          placeholder="Comment"
+          id="user-comment"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="send-form">Send</button>
+    </form>
+  </div>
+</div>
+
+<div class="backdrop" data-modal1>
+  <div class="modal">
+    <button class="icon-button" type="button" data-modal-close1>
+      <svg class="icon-menu-close modal-close" width="32" height="32">
+        <use href="/img/sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+    <p class="modal-p">Healthy eating is the key to success</p>
+    <form class="modal-form" onsubmit="alert('submit!');return false">
+      <div class="input-label-svg">
+        <label for="user-name" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="text"
+            class="modal-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Full name"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-label-svg">
+        <label for="user-phone" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            class="modal-input"
+            name="user-tel"
+            id="user-phone"
+            placeholder="Phone"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-label-svg">
+        <label for="user-email" class="label-input"><span></span></label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            class="modal-input required-input-your-order"
+            name="user-mail"
+            id="user-email"
+            placeholder="Email"
+            pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+            required
+          />
+          <div class="container-text-valid-invalid">
+            <p class="text-invalid">Invalid email, try again</p>
+            <p class="text-valid">Succes!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-input">
+        <label for="user-comment" class="label-input"><span></span> </label>
+        <textarea
+          class="modal-input-comment"
+          name="user-comment"
+          placeholder="Comment"
+          id="user-comment"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="send-form">Send</button>
+    </form>
+  </div>
+</div>
