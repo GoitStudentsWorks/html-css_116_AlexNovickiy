@@ -63,6 +63,7 @@
   }
 }
 
+
 @media screen and (min-width: 375px) {
   .hero-title {
     font-size: 52px;
@@ -80,7 +81,7 @@
 
 @media screen and (max-width: 374px) {
   .hero-title {
-      font-size: 52px;
+      font-size: 42px;
       max-width: 100%;
       padding-left: 20px;
       padding-right: 20px;
