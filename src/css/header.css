@@ -270,7 +270,7 @@
 
 .item-list-menu-nav {
   text-align: center;
-  width: 118px;
+  min-width: 118px;
   height: 44px;
   border-radius: 12px;
 }
