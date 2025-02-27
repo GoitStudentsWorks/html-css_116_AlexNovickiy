@@ -19,42 +19,40 @@
           will contact you !
         </p>
         <form class="form-your-order">
-          <div class="input-group">
-            <label for="credentials" class="label-your-order"></label>
-            <input
-              type="text"
-              id="credentials"
-              name="credentials"
-              class="input-your-order"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="email" class="label-your-order"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="input-your-order required-input-your-order"
-              placeholder="Email"
-              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
-              required
-            />
-            <div class="container-text-valid-invalid">
-              <p class="text-invalid">Invalid email, try again</p>
-              <p class="text-valid">Succes!</p>
+          <div class="container-input">
+            <div class="input-group">
+              <input
+                type="text"
+                id="credentials"
+                name="credentials"
+                class="input-your-order"
+                placeholder="Full Name"
+                required
+              />
             </div>
-          </div>
-          <div class="input-group">
-            <label for="user-comment" class="form-label"></label>
-            <textarea
-              placeholder="Comment"
-              name="user-comment"
-              class="input-your-order textarea-input-your-order"
-              id="user-comment"
-            ></textarea>
+            <div class="input-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-your-order required-input-your-order"
+                placeholder="Email"
+                pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+                required
+              />
+              <div class="container-text-valid-invalid">
+                <p class="text-invalid">Invalid email, try again</p>
+                <p class="text-valid">Succes!</p>
+              </div>
+            </div>
+            <div class="input-group">
+              <textarea
+                placeholder="Comment"
+                name="user-comment"
+                class="input-your-order textarea-input-your-order"
+                id="user-comment"
+              ></textarea>
+            </div>
           </div>
           <button type="submit" class="btn-your-order">Send</button>
         </form>
@@ -102,6 +100,7 @@
           <ul class="social-links">
             <li class="social-link">
               <a
+                class="social-link-order"
                 href="https://www.instagram.com/goitclub/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -110,6 +109,7 @@
             </li>
             <li class="social-link">
               <a
+                class="social-link-order"
                 href="https://www.facebook.com/goITclub/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -118,6 +118,7 @@
             </li>
             <li class="social-link">
               <a
+                class="social-link-order"
                 href="https://www.youtube.com/c/GoIT"
                 target="_blank"
                 rel="noopener noreferrer"
