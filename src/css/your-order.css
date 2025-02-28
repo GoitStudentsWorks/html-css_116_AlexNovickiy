@@ -180,8 +180,10 @@
   flex-direction: column;
 }
 
-.input-group:not(:last-child) .input-your-order {
-  margin-bottom: 16px;
+.container-input{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 }
 
 .textarea-input-your-order {
@@ -272,7 +274,7 @@
   border-color: #E74A3B;
 }
 
-.required-input-your-order:not(:placeholder-shown):invalid+.container-text-valid-invalid .text-invalid {
+.required-input-your-order:not(:placeholder-shown):invalid ~ .text-invalid {
   color: #E74A3B;
   display: block;
 }
@@ -282,7 +284,7 @@
   border-color: #3cbc81;   
 }
 
-.required-input-your-order:not(:placeholder-shown):valid + .container-text-valid-invalid .text-valid {
+.required-input-your-order:not(:placeholder-shown):valid ~ .text-valid {
   color: #3cbc81;
   display: block;
 }
